@@ -9,13 +9,14 @@ import {
 } from "@solana/wallet-adapter-react-ui";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import RequestAirdrop from "./components/RequestAirdrop";
+import ShowBalance from "./components/ShowBalance";
 
 function App() {
   return (
     <div>
       <ConnectionProvider
         endpoint={
-          "https://solana-devnet.g.alchemy.com/v2/g6c4kKmJT_Qfb-yh81t2OpL2SoCJexAS"
+          "https://devnet.helius-rpc.com/?api-key=4ba31a55-25a1-4117-984f-5a2c5e5b7504"
         }
       >
         <WalletProvider wallets={[]} autoConnect>
@@ -30,6 +31,7 @@ function App() {
               <WalletMultiButton />
             </div>
             <RequestAirdrop />
+            <ShowBalance />
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
