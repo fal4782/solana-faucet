@@ -26,6 +26,7 @@ export default function ShowBalance() {
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
+          justifyContent: "center",
           gap: "15px",
           padding: "20px",
           margin: "0 auto",
